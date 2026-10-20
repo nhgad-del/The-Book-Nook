@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Nook | A little place for readers</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">The Book Nook<span>.</span></a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#favorites">Favorites <span id="favorite-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="eyebrow">A LITTLE PLACE FOR READERS</p>
+
+                <h1>Find your next<br>favorite <em>story.</em></h1>
+
+                <p class="hero-description">
+                    A thoughtfully collected shelf of stories,
+                    adventures, and ideas. Take a look around.
+                </p>
+
+                <a href="#collection" class="primary-button">
+                    Explore the collection →
+                </a>
+            </div>
+
+            <div class="hero-art" aria-label="Illustration of books">
+                <div class="sun"></div>
+                <div class="book-stack">
+                    <div class="book book-one">THE<br>WILD<br>PLACES</div>
+                    <div class="book book-two">A QUIET<br>UNIVERSE</div>
+                    <div class="book book-three">LITTLE<br>WONDERS</div>
+                </div>
+                <span class="art-note">stories to get lost in</span>
+            </div>
+        </section>
+
+        <section class="collection section" id="collection">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE SHELF</p>
+                    <h2>Explore our collection</h2>
+                </div>
+
+                <p class="collection-note">
+                    A few good books, picked with love.
+                </p>
+            </div>
+
+            <div class="filters">
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Search by title or author..."
+                    aria-label="Search books"
+                >
+
+                <select id="genre-filter" aria-label="Filter by genre">
+                    <option value="All">All genres</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Mystery">Mystery</option>
+                </select>
+            </div>
+
+            <p class="result-count" id="result-count"></p>
+
+            <div class="book-grid" id="book-grid">
+                <!-- JavaScript will add book cards here -->
+            </div>
+        </section>
+
+        <section class="favorites-section section" id="favorites">
+            <p class="eyebrow">YOUR LITTLE LIST</p>
+            <h2>Books you love</h2>
+            <p id="favorites-message">
+                Tap the heart on any book to save it here.
+            </p>
+            <div class="book-grid" id="favorites-grid"></div>
+        </section>
+
+        <section class="about section" id="about">
+            <p class="eyebrow">ABOUT THE NOOK</p>
+            <h2>For the love of a good story.</h2>
+            <p>
+                The Book Nook is a small, curated collection for
+                anyone who believes that the right book can make
+                an ordinary day feel a little extraordinary.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for readers, with love. © 2026 The Book Nook</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>
